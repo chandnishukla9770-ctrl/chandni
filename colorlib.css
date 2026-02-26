@@ -1,0 +1,210 @@
+        .navbar{
+            background-color: bisque;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            padding-inline-start: 10px;
+            display: inline-flex;
+            height: 130px;
+            width: 100%;
+            justify-items: center; 
+            align-items: center;
+            margin-right: 100px;
+            }
+        .navbar ul{
+            overflow: auto;
+            display: inline;
+        }
+        .navbar ul li{
+        list-style: none;
+        float: center;
+        margin: 9px 8px;
+        padding: 3px 5px;
+        display: inline;
+}
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 5px;
+            margin: 7px;
+            display: inline;
+        }
+        .navbar ul i{
+            padding-inline-end: 0%;
+            row-gap: 10px;
+        }
+          .layout{
+            display: grid;
+            grid-template-columns: 1fr 300px 300px;
+            grid-template-rows: 250px 250px;
+            height: 100%;
+            grid-template-areas: "main img1 img2" "main img3 img4";
+            gap: 20px; justify-content: center;
+            padding-top: 30px;
+            margin-bottom: 0%;
+        }
+         .main{
+            grid-area: main;
+            background-image:url(https://m.media-amazon.com/images/I/71FUnA5ZsKL._AC_UF1000,1000_QL80_.jpg);
+         }
+          .img1{
+            grid-area: img1;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvkEDZ1tqFLIAyXPIm99eYARD14iAyvyWFpQ&s);
+         }
+         .img2{
+            grid-area: img2; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82YT_ytsLo4oL6tB0mYlEbFgc4K470v7ocg&s);
+         }
+          .img3{
+            grid-area: img3; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssH0PDjTeU-V-p4xG0NsUmuXPbBvARE0RNw&s);
+         }
+         .img4{
+            grid-area: img4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjQfCYlbuBVdY_-NeyNpaTpbPQL1M--llOA&s);
+         }
+         .nav{
+            background-color: rgb(242, 243, 235);
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            padding-inline-start: 10px;
+             display: inline-flex;
+            height: 100px;
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+            padding-top: 20px;
+            
+         }
+         .nav .logo{
+            display: inline-flex;
+            align-items: start;
+            align-content: center;
+            justify-content: center;
+            
+         }
+         .nav ul{
+            display: inline;
+            overflow: auto;
+         }
+         .nav ul li{
+            display: inline;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            float: center;
+            margin: 9px 8px;
+            padding: 3px 5px;
+            margin-right: 50px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 5px;
+            margin: 7px;
+            display: inline-flex;
+            align-items: end;
+            justify-content: end;
+
+        }
+        .layout1{
+            display: grid;
+            grid-template-columns: 250px 250px 250px 250px;
+            grid-template-rows: 300px 300px;
+            height: 250px;
+            width: 100%;
+            grid-template-areas: "first second third fourth"
+            "fifth sixth seventh eighth";
+            gap: 80px; justify-content: center;
+            padding-top: 30px; 
+            padding-left: 0%;  
+            padding-right: 0%; 
+            margin-left: 0%; 
+            margin-right: 0%;
+           
+        }
+        .first{
+            grid-area: first;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYXIy0nfNQIy85se7PsxpeWpb9EYxmdMmwQ&s);
+        }
+        .second{
+            grid-area: second;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShk4HkT_jelpfuZKIWK6Z8X2q86i-zUXPrcQ&s);
+        }
+        .third{
+            grid-area: third;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipZ4e4pBbZWAQD27nroaXZr-oFkPojd97qw&s);
+        }
+        .fourth{
+            grid-area: fourth;
+            background-image: url(https://media.istockphoto.com/id/1307568521/photo/its-the-denim-that-does-it-for-me.jpg?s=612x612&w=0&k=20&c=0RQfpn8VJxXl6sO4aUehTsPvyYKGPwVwz1EdJRBU_Nw=);
+        }
+        .fifth{
+            grid-area: fifth;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmyf748-ABeA51KnklEb8Ew3VoqCyArBSjrg&s);
+        }
+        .sixth{
+            grid-area: sixth;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYdl_bLM_BtUrig_fSMaYyJ1vnrfi86mNFA&s);
+        }
+        .seventh{
+            grid-area: seventh;
+            background-image: url(https://static.wixstatic.com/media/3f3442_1f08439a5aec4e049158456fcf9e01cb~mv2.png/v1/fill/w_406,h_754,al_c,q_85,enc_auto/3f3442_1f08439a5aec4e049158456fcf9e01cb~mv2.png);
+        }
+        .eighth{
+            grid-area: eighth;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWa85HuBlzNgR9kpLj_mrKDMSnguJxwhCqGQ&s);
+        }
+        
+        h4{
+            margin-top: 125%;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+        }
+       
+         p{
+            align-items: center;
+            align-content: center;
+            margin-right: 80px;
+            padding-left: 90px;
+            margin-top: 5%;
+            
+        }
+        .container{
+            height: 500px;
+            margin-top: 100px;
+            width: 100%;
+
+           
+        }
+        .box5{
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/04/48/50/00585a3568a0a7d.jpg);
+            height: 450px;
+            padding: 2px 16px;
+            margin-top: 500px;
+            opacity: 1px;
+           
+        }
+        .box6{
+            height: 250px;
+            margin-top: 100px;
+            margin-left: 150px;
+            margin-right: 150px;
+               
+            
+        }
+        .slideshow-container{
+            padding-left: 350px;
+            padding-top: 50px;
+            unicode-bidi: isolate;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+         
+         
+

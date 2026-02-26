@@ -1,0 +1,62 @@
+.navbar{
+    display:flex;
+    height: 750px;
+    
+
+    background-color: rgb(185, 181, 181);
+    color: black;
+    align-items: start;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    
+    
+
+}
+.nav{
+    display: inline;
+    align-items: start;
+    font-weight: bolder;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+
+}
+
+a{
+    display: inline-block;
+    margin-right: 120px;
+    align-items: center;
+    font-size: larger;
+    padding-left: 5px;
+    
+}
+.box{
+   
+    background-image: url(https://cleanindiagroups.com/wp-content/uploads/2024/05/20-off.jpg) ;
+    height: 500px;
+    width: 80%;
+    display: block;
+    padding: 2px 16px;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-left: 100px;
+    margin-top: 80px;
+    border-radius: 30px;
+    align-items: center;
+
+    
+
+}
+.box2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTdy4ObRvx-HoPjh8rTACK36gHZdCuF6dXEw&s);
+    height: 300px;
+    width: 450px;
+    padding: 2px 16px;
+    display: block;
+    margin-left: 200px;
+    margin-top: 60px;
+}
