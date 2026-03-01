@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            background-color: aquamarine;
+            padding: 30px;
+            margin: auto;
+            box-shadow: 5px 5px rgb(238, 200, 144);
+            border-radius: 10px;
+            
+        }
+        #ansbox{
+            width: 300px;
+            height: 50px;
+            box-shadow: 5px 5px lightpink;
+            font-size: 40px;
+            color: grey;
+        }
+        button{
+            padding: 15px;
+            background-color: palegoldenrod;
+            color:black;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+    </style>
+    <script>
+        function backDel(){
+            let txtval=document.getElementById("ansbox").value;
+            let myval=txtval.slice(0, txtval.length-1);
+            document.getElementById("ansbox").value=myval;
+            document.getElementById("ansbox").focus();
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <input type="text" id="ansbox">
+        <button onclick="document.getElementById('ansbox').value+=1">1</button>
+        <button onclick="document.getElementById('ansbox').value+=2">2</button>
+        <button onclick="document.getElementById('ansbox').value+=3">3</button>
+        <button onclick="document.getElementById('ansbox').value+=4">4</button>
+        <button onclick="document.getElementById('ansbox').value+=5">5</button>
+        <button onclick="document.getElementById('ansbox').value+=6">6</button>
+        <button onclick="document.getElementById('ansbox').value+=7">7</button>
+        <button onclick="document.getElementById('ansbox').value+=8">8</button>
+        <button onclick="document.getElementById('ansbox').value+=9">9</button>
+        <button onclick="document.getElementById('ansbox').value+=0">0</button>
+        <button onclick="document.getElementById('ansbox').value+='+'">+</button>
+        <button onclick="document.getElementById('ansbox').value+='-'">-</button>
+        <button onclick="document.getElementById('ansbox').value+='/'">/</button>
+        <button onclick="document.getElementById('ansbox').value+='*'">*</button>
+        <button onclick="document.getElementById('ansbox').value=eval(document.getElementById('ansbox').value)">=</button>
+        <button onclick="document.getElementById('ansbox').value=''">ac</button>
+        <button onclick="backDel()">X</button>
+
+    </div>
+    
+</body>
+</html>

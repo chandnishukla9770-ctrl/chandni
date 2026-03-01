@@ -1,0 +1,11 @@
+text-center{
+    text-align: center;
+}
+.container{
+    text-align: center;
+    background-color: red;
+}
+.row1{
+    box-sizing: border-box;
+}
+

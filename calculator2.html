@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            background-color: rgb(250, 142, 250);
+            padding: 20px;
+            margin: auto;
+            box-shadow: 5px 5px rgb(103, 28, 103);
+            border-radius: 10px;
+        }
+        #ansbox{
+            width: 300px;
+            height: 50px;
+            box-shadow: 5px 5px lightblue;
+            font-size: 40px;
+            color: grey;
+        }
+        button{
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+            margin: 10px;
+            size: auto;
+        }
+
+    </style>
+    <script>
+        function backDel(){
+            let txtval=document.getElementById('ansbox').value;
+            let myval=txtval.slice(0, txtval.length-1);
+            document.getElementById('ansbox').value=myval;
+            document.getElementById('ansbox').focus();
+        }
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <div id="box">
+            <input type="text" id="ansbox">
+            <button style="background-color: antiquewhite;" onclick="document.getElementById('ansbox').value=''">AC</button>
+            <button style="background-color: antiquewhite;" onclick="backDel()">CE</button>
+            <button style="background-color: antiquewhite;" onclick="document.getElementById('ansbox').value=eval(document.getElementById('ansbox').value)">=</button>
+            <button style="background-color: antiquewhite;" onclick="document.getElementById('ansbox').value = eval(document.getElementById('ansbox').value) / 100">%</button>
+            <button style="background-color: aquamarine;" onclick="document.getElementById('ansbox').value+=7">7</button>
+            <button style="background-color: aquamarine;" onclick="document.getElementById('ansbox').value+=8">8</button>
+            <button style="background-color: aquamarine;" onclick="document.getElementById('ansbox').value+=9">9</button>
+            <button style="background-color: aquamarine;" onclick="document.getElementById('ansbox').value+='/'">/</button>
+            <button style="background-color: aquamarine;" onclick="document.getElementById('ansbox').value+=4">4</button>
+            <button style="background-color: rgb(186, 159, 186);" onclick="document.getElementById('ansbox').value+=5">5</button>
+            <button style="background-color: rgb(186, 159, 186);" onclick="document.getElementById('ansbox').value+=6">6</button>
+            <button style="background-color: rgb(186, 159, 186);" onclick="document.getElementById('ansbox').value+='*'">*</button>
+            <button style="background-color: rgb(186, 159, 186);" onclick="document.getElementById('ansbox').value+=1">1</button>
+            <button style="background-color: rgb(186, 159, 186);" onclick="document.getElementById('ansbox').value+=2">2</button>
+            <button style="background-color: skyblue;" onclick="document.getElementById('ansbox').value+=3">3</button>
+            <button style="background-color: skyblue;" onclick="document.getElementById('ansbox').value+='-'">-</button>
+            <button style="background-color: skyblue;" onclick="document.getElementById('ansbox').value+=0">0</button>
+            <button style="background-color: skyblue;" onclick="document.getElementById('ansbox').value+='00'">00</button>
+            <button style="background-color: skyblue;" onclick="document.getElementById('ansbox').value+='.'">.</button>
+            <button style="background-color: lightsalmon;" onclick="document.getElementById('ansbox').value+='+'">+</button>
+            
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

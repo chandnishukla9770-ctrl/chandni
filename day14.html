@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style> -->
+        <!-- /* #box{
+            width: 10px;
+            background-color: blue;
+            height: 50px;
+        } */ -->
+
+    
+    <!-- </style> -->
+
+
+    <script>
+
+         
+
+        // function myfun(){
+        //     document.getElementById("demo").innerHTML+="Cybrome!";
+        
+        
+        // }
+        
+        // function display(){
+        //     setInterval(myfun, 1000);
+        // }
+
+        // var myInterval;
+        // function myfun(){
+        //     document.getElementById("demo").innerHTML+="Cybrom!"
+        // }
+        // function display(){
+        //     myInterval= setInterval(myfun, 1000);
+        // }
+        // function mystop(){
+        //     clearInterval(myInterval);
+        // }
+
+      
+        // var myInterval;
+        // var w = 10;
+        // function myline(){
+        //     let obj= document.getElementById("box");
+        //     w=w+1;
+        //     obj.style.width=w+"px";
+        // }
+
+        // function display(){
+        //     myInterval=setInterval(myline, 10);
+        // }
+        // function mystop(){
+        //     clearInterval(myInterval)
+        // }
+
+        var myInterval;
+        function myfun(){
+            document.getElementById("demo").innerHTML="Happy Birthday!!!"
+        }
+        function display(){
+            myInterval= setTimeout(myfun, 5000);
+        
+        }
+        function mystop(){
+            clearTimeout(myInterval);
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<!-- <button onclick="display()">click here!!!</button>
+<p id="demo">Welcome!</p> -->
+
+<!-- <button onclick="display()">Start</button>
+<button onclick="mystop()">Stop</button>
+<p id="demo">Welcome!</p> -->
+
+
+<!-- <button onclick="display()">Start</button>
+<button onclick="mystop()">Stop</button>
+<br><br>
+<div id="box"></div> -->
+
+
+
+<button onclick="display()">Click here!</button>
+<p id="demo">Welcome</p>
+<button onclick="mystop()">Stop</button>
+
+
+</body>
+</html>

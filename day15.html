@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #box{
+            width: 10px;
+            height: 50px;
+            background-color: purple;
+        } */
+
+
+        #myball{
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+    </style>
+    <script>
+        // var wdt=0;
+        // var myInterval;
+        // function myfun(){
+        //     let obj= document.getElementById("box");
+        //     wdt=wdt+2;
+        //     obj.style.width=wdt+"px";
+        // }
+
+        // function display(){
+        //     myInterval= setInterval(myfun,10);
+
+        // }
+        // function mystop(){
+        //     clearInterval(myInterval)
+        // }
+            var myInterval;
+            var lft = 0;
+        function myfun(){
+            let obj = document.getElementById("myball");
+            lft = lft + 5;
+            obj.style.left = lft + "px";
+            if (lft >= 1200) {
+                clearInterval(myInterval);
+            }
+
+        }
+
+        function display(){
+           myInterval = setInterval(myfun, 10);
+        }
+
+            
+
+
+    </script>
+</head>
+<body>
+    <!-- <button onclick="display()">Click here!</button>
+    <button onclick="mystop()">Stop</button>
+    <div id="box"></div> -->
+
+    <button onclick="display()">Start</button>
+    <br><br>
+    <img src="https://media.gettyimages.com/id/93889291/photo/football-used-isolated-old-style-soccer-ball-on-white-background.jpg?s=612x612&w=gi&k=20&c=CsFN8SkM0XAx42MPgwnLPYoxRh78CURbhqLdGLPGFHo=" id="myball">
+
+
+
+
+
+
+
+
+
+</body>
+</html>
