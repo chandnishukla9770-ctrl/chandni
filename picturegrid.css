@@ -1,0 +1,38 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px;
+    grid-template-rows: 250px 250px;
+    height: 750px;
+    grid-template-areas: "main img1 img2"
+        "main img3 img4";
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.main {
+    grid-area: main;
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-1368930356470615990/original/a755ba31-8755-44d4-b7de-95685942b70d.jpeg?im_w=960);
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-1368930356470615990/original/02d0a338-6b34-4fa2-a3b9-a6b696785e93.jpeg?im_w=720);
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-1368930356470615990/original/5fefcbb5-cad3-4656-b983-5aefffd363b6.jpeg?im_w=720);
+}
+
+.img3 {
+    grid-area: img3;
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-1368930356470615990/original/7a6aec7f-74da-4c38-ba9a-bc5d842b7e3c.jpeg?im_w=720);
+}
+
+.img4 {
+    grid-area: img4;
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-1368930356470615990/original/fd2346ff-dfa3-4f75-842f-ce361bd1c260.jpeg?im_w=720);
+
+}

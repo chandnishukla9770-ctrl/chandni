@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    height: 80%;  
+    position: absolute;
+    width: 20%;
+    background-color: aliceblue;
+    padding: 2px 16px;
+    margin-left: 35%;
+    margin-top: 20px;
+
+}
+
+.container{
+    justify-content: center;
+    padding: 2px 16px;
+    margin-left: 8px;
+    padding-top: 10px;
+          
+}
+.heading{
+    text-align: center;
+    justify-content: center;
+    padding: 2px 16px;
+
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.footer{
+    align-items: center;
+    justify-content: center;
+
+}
