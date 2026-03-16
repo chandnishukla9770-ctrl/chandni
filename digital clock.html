@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="digiclock" style="height: 100px; width: 200px; border: solid black 2px; display: grid; grid-template-rows: repeat(3,0fr); font-size: 50px; font-weight: bolder; align-items: center; padding-top: 25px;">
+        <h1 id="hours"></h1>
+        <br>
+        <h2 id="minutes"></h2>
+        <br>
+        <h2 id="seconds"></h2>
+    </div>
+
+
+
+    <script>
+        function showTime(){
+     let now = new Date();
+     let h = now.getHours();
+     let m = now.getMinutes();
+     let s = now.getSeconds();
+    
+    let time = h + ":" + m + ":" + s ;
+    document.getElementById('digiclock').innerHTML=time;
+}
+    setInterval(showTime, 1000);
+
+
+    </script>
+
+
+</body>
+</html>
