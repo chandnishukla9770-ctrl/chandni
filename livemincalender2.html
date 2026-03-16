@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="cal" style="height: 200px; width: 300px; border: black solid 2px; display: grid; grid-template-columns: repeat(2,1fr); font-family: Arial, Helvetica, sans-serif; font-weight: bold; padding: 2px; text-align: center;" >
+        <h1 id="date"></h1>
+        <h1 id="year"></h1>
+        <h1 id="month"></h1>
+        <h1 id="days"></h1>
+    </div>
+
+
+
+    <script>
+let date = new Date();
+let months = ["january", "february", "march", "april", 'may', "june", "july", "august", "september", "october", "november", "december"];
+let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+
+document.getElementById('date').innerHTML = date.getDate();
+document.getElementById('year').innerHTML=date.getFullYear();
+document.getElementById('month').innerHTML=months[date.getMonth()];
+document.getElementById('days').innerHTML=days[date.getDay()];
+
+
+
+
+    </script>
+    
+</body>
+</html>
